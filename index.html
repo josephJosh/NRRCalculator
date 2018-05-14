@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>NRR Calculator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Net Run Rate Calculator</h2>
+            <p class="lead">Net Run Rate (NRR) is a statistical method used in analysing a team's performance in cricket. NRR is the average runs per over that team scores, minus the average runs per over that is scored against them.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 order-md-1">
+            </div>
+            <div class="col-md-8 order-md-2">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="fInngRuns">Runs (First Innings)</label>
+                            <input type="number" class="form-control" id="fInngRuns" placeholder="0" value="" min="0" max="2000" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="fInngOvers">Overs (First Innings)</label>
+                            <input type="number" class="form-control" id="fInngOvers" placeholder="0" value="" min="0" max="2000" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="sInngRuns">Runs (Second Innings)</label>
+                            <input type="number" class="form-control" id="sInngRuns" placeholder="0" value="" min="0" max="2000" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="sInngOvers">Overs (Second Innings)</label>
+                            <input type="number" class="form-control" id="sInngOvers" placeholder="0" value="" min="0" max="2000" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nrrTBF">NRR of Team that Batted First</label>
+                        <input type="text" class="form-control" id="nrrTBF" readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nrrTBS">NRR of Team that Batted Second</label>
+                        <input type="text" class="form-control" id="nrrTBS" readonly>
+                    </div>
+                    <hr class="mb-4">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
